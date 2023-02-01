@@ -1,0 +1,16 @@
+PODS:
+  - SYCollectionViewRoundFlowLayout (0.1.0)
+
+DEPENDENCIES:
+  - SYCollectionViewRoundFlowLayout (from `../`)
+
+EXTERNAL SOURCES:
+  SYCollectionViewRoundFlowLayout:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SYCollectionViewRoundFlowLayout: bcb1921dd6d04429c094fad380fdbca4ba974e2c
+
+PODFILE CHECKSUM: c2e1a003face0e6e92a1699ff51de6cac7b6c1d5
+
+COCOAPODS: 1.11.3

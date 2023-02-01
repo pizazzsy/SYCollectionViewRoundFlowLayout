@@ -1,0 +1,43 @@
+//
+//  SYCollectionViewFlowLayoutUtils.h
+//  SYCollectionViewRoundFlowLayout_Example
+//
+//  Created by Mac on 2023/2/1.
+//  Copyright © 2023 sy. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface SYCollectionViewFlowLayoutUtils : NSObject
+/// 获取cell间距
+/// @param sectionIndex sectionIndex description
++ (CGFloat)evaluatedMinimumInteritemSpacingForSectionWithCollectionLayout:(UICollectionViewFlowLayout *)layout atIndex:(NSInteger)sectionIndex;
+
+/// 获取用户设置CollectionView 对应section的 sectionInset
+/// @param index index description
++ (UIEdgeInsets)evaluatedSectionInsetForItemWithCollectionLayout:(UICollectionViewFlowLayout *)layout atIndex:(NSInteger)index;
+#pragma mark - 不规则Cell计算方案
+
+/// 不规则cell找出top最高位置
+/// @param section section description
+/// @param numberOfItems numberOfItems description
+/// @param defaultFrame defaultFrame description
++ (CGRect)calculateIrregularitiesCellByMinTopFrameWithLayout:(UICollectionViewFlowLayout *)layout
+                                                     section:(NSInteger)section
+                                               numberOfItems:(NSInteger)numberOfItems
+                                                defaultFrame:(CGRect)defaultFrame;
+
+/// 不规则cell找出bootom最低位置
+/// @param layout layout description
+/// @param section section description
+/// @param numberOfItems numberOfItems description
+/// @param defaultFrame defaultFrame description
++ (CGRect)calculateIrregularitiesCellByMaxBottomFrameWithLayout:(UICollectionViewFlowLayout *)layout
+                                                        section:(NSInteger)section
+                                                  numberOfItems:(NSInteger)numberOfItems
+                                                   defaultFrame:(CGRect)defaultFrame;
+@end
+
+NS_ASSUME_NONNULL_END

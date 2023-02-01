@@ -1,0 +1,6 @@
+framework module SYCollectionViewRoundFlowLayout {
+  umbrella header "SYCollectionViewRoundFlowLayout-umbrella.h"
+
+  export *
+  module * { export * }
+}

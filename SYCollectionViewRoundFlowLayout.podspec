@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'SYCollectionViewRoundFlowLayout'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of SYCollectionViewRoundFlowLayout.'
+  s.summary          = 'CollectionView圆角'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +18,13 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/sy/SYCollectionViewRoundFlowLayout'
+TODO: 自定义CollectionView圆角，修改背景色等等
+DESC
+  s.homepage         = 'https://github.com/pizazzsy/SYCollectionViewRoundFlowLayout'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'sy' => '864983345@qq.com' }
-  s.source           = { :git => 'https://github.com/sy/SYCollectionViewRoundFlowLayout.git', :tag => s.version.to_s }
+  s.author           = { 'pizazzsy' => 'sy_0425@163.com' }
+  s.source           = { :git => 'https://github.com/pizazzsy/SYCollectionViewRoundFlowLayout.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
